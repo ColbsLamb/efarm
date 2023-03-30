@@ -1,18 +1,12 @@
 import { Product } from "../../app/models/products";
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import { Avatar, CardHeader } from "@mui/material";
+import { Avatar, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 interface Props {
     product: Product;
 }
 
-export default function ProductCard({product}: Props) {
+export default function ProductCard({ product }: Props) {
     return (
             <Card>
                 <CardHeader 

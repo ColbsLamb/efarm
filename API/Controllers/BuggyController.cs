@@ -11,12 +11,12 @@ namespace API.Controllers
         {
             return NotFound();
         }
-        
+
         [HttpGet("bad-request")]
 
         public ActionResult GetBadRequest()
         {
-            return BadRequest(new ProblemDetails{Title = "This is a bad request"});
+            return BadRequest(new ProblemDetails { Title = "This is a bad request" });
         }
 
         [HttpGet("unauthorised")]

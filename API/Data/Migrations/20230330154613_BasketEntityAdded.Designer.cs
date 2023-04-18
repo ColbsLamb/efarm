@@ -69,7 +69,7 @@ namespace API.Data.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("PictureURL")
+                    b.Property<string>("PictureUrl")
                         .HasColumnType("TEXT");
 
                     b.Property<long>("Price")

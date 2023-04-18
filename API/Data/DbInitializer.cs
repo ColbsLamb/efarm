@@ -1,5 +1,6 @@
 using API.Entities;
 
+
 namespace API.Data
 {
     public static class DbInitializer
@@ -10,13 +11,13 @@ namespace API.Data
 
             var products = new List<Product>
             {
-                    new Product
+                new Product
                 {
                     Name = "Angular Speedster Board 2000",
                     Description =
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 20000,
-                    PictureURL = "/images/products/sb-ang1.png",
+                    PictureUrl = "/images/products/sb-ang1.png",
                     Type = "Boards",
                     QuantityInStock = 100
                 },
@@ -25,7 +26,7 @@ namespace API.Data
                     Name = "Green Angular Board 3000",
                     Description = "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
                     Price = 15000,
-                    PictureURL = "/images/products/sb-ang2.png",
+                    PictureUrl = "/images/products/sb-ang2.png",
                     Type = "Boards",
                     QuantityInStock = 100
                 },
@@ -35,7 +36,7 @@ namespace API.Data
                     Description =
                         "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                     Price = 18000,
-                    PictureURL = "/images/products/sb-core1.png",
+                    PictureUrl = "/images/products/sb-core1.png",
                     Type = "Boards",
                     QuantityInStock = 100
                 },
@@ -45,7 +46,7 @@ namespace API.Data
                     Description =
                         "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
                     Price = 30000,
-                    PictureURL = "/images/products/sb-core2.png",
+                    PictureUrl = "/images/products/sb-core2.png",
                     Type = "Boards",
                     QuantityInStock = 100
                 },
@@ -55,7 +56,7 @@ namespace API.Data
                     Description =
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 25000,
-                    PictureURL = "/images/products/sb-react1.png",
+                    PictureUrl = "/images/products/sb-react1.png",
                     Type = "Boards",
                     QuantityInStock = 100
                 },
@@ -65,7 +66,7 @@ namespace API.Data
                     Description =
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 12000,
-                    PictureURL = "/images/products/sb-ts1.png",
+                    PictureUrl = "/images/products/sb-ts1.png",
                     Type = "Boards",
                     QuantityInStock = 100
                 },
@@ -75,7 +76,7 @@ namespace API.Data
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1000,
-                    PictureURL = "/images/products/hat-core1.png",
+                    PictureUrl = "/images/products/hat-core1.png",
                     Type = "Hats",
                     QuantityInStock = 100
                 },
@@ -85,7 +86,7 @@ namespace API.Data
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 8000,
-                    PictureURL = "/images/products/hat-react1.png",
+                    PictureUrl = "/images/products/hat-react1.png",
                     Type = "Hats",
                     QuantityInStock = 100
                 },
@@ -95,7 +96,7 @@ namespace API.Data
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1500,
-                    PictureURL = "/images/products/hat-react2.png",
+                    PictureUrl = "/images/products/hat-react2.png",
                     Type = "Hats",
                     QuantityInStock = 100
                 },
@@ -105,7 +106,7 @@ namespace API.Data
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1800,
-                    PictureURL = "/images/products/glove-code1.png",
+                    PictureUrl = "/images/products/glove-code1.png",
                     Type = "Gloves",
                     QuantityInStock = 100
                 },
@@ -115,7 +116,7 @@ namespace API.Data
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1500,
-                    PictureURL = "/images/products/glove-code2.png",
+                    PictureUrl = "/images/products/glove-code2.png",
                     Type = "Gloves",
                     QuantityInStock = 100
                 },
@@ -125,7 +126,7 @@ namespace API.Data
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1600,
-                    PictureURL = "/images/products/glove-react1.png",
+                    PictureUrl = "/images/products/glove-react1.png",
                     Type = "Gloves",
                     QuantityInStock = 100
                 },
@@ -135,7 +136,7 @@ namespace API.Data
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1400,
-                    PictureURL = "/images/products/glove-react2.png",
+                    PictureUrl = "/images/products/glove-react2.png",
                     Type = "Gloves",
                     QuantityInStock = 100
                 },
@@ -145,7 +146,7 @@ namespace API.Data
                     Description =
                         "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                     Price = 25000,
-                    PictureURL = "/images/products/boot-redis1.png",
+                    PictureUrl = "/images/products/boot-redis1.png",
                     Type = "Boots",
                     QuantityInStock = 100
                 },
@@ -155,7 +156,7 @@ namespace API.Data
                     Description =
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 18999,
-                    PictureURL = "/images/products/boot-core2.png",
+                    PictureUrl = "/images/products/boot-core2.png",
                     Type = "Boots",
                     QuantityInStock = 100
                 },
@@ -165,7 +166,7 @@ namespace API.Data
                     Description =
                         "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
                     Price = 19999,
-                    PictureURL = "/images/products/boot-core1.png",
+                    PictureUrl = "/images/products/boot-core1.png",
                     Type = "Boots",
                     QuantityInStock = 100
                 },
@@ -174,7 +175,7 @@ namespace API.Data
                     Name = "Angular Purple Boots",
                     Description = "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
                     Price = 15000,
-                    PictureURL = "/images/products/boot-ang2.png",
+                    PictureUrl = "/images/products/boot-ang2.png",
                     Type = "Boots",
                     QuantityInStock = 100
                 },
@@ -184,7 +185,7 @@ namespace API.Data
                     Description =
                         "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                     Price = 18000,
-                    PictureURL = "/images/products/boot-ang1.png",
+                    PictureUrl = "/images/products/boot-ang1.png",
                     Type = "Boots",
                     QuantityInStock = 100
                 },

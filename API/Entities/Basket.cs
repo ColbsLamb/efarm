@@ -6,7 +6,7 @@ namespace API.Entities
         public string BuyerId { get; set; }
         public List<BasketItem> Items { get; set; } = new List<BasketItem>();
 
-        public void AddItem(Product product, int quantity) 
+        public void AddItem(Product product, int quantity)
         {
             if (Items.All(item => item.ProductId != product.Id))
             {
@@ -21,9 +21,9 @@ namespace API.Entities
         public void RemoveItem(int productId, int quantity)
         {
             var item = Items.FirstOrDefault(item => item.ProductId == productId);
-            if (item == null) return; 
+            if (item == null) return;
             item.Quantity -= quantity;
-            if(item.Quantity == 0) Items.Remove(item);
+            if (item.Quantity == 0) Items.Remove(item);
         }
     }
 }

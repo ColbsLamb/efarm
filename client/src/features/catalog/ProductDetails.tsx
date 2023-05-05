@@ -2,7 +2,7 @@ import { Divider, Grid, Table, TableBody, TableCell, TableContainer, TableRow, T
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import NotFound from "../../app/errors/NotFound";
-import LoadingComponent from "../../app/layout/LoadingComponents";
+import LoadingComponent from "../../app/layout/LoadingComponent";
 import { LoadingButton } from "@mui/lab";
 import { useAppDispatch, useAppSelector } from "../../app/store/configureStore";
 import { addBasketItemAsync, removeBasketItemAsync } from "../basket/basketSlice";
@@ -12,7 +12,7 @@ export default function ProductDetails() {
 const { basket, status } = useAppSelector(state => state.basket);
 const dispatch = useAppDispatch();
 const { id } = useParams<{ id: string }>();
-const product = useAppSelector(state => productSelectors.selectById(state, id));
+const product = useAppSelector(state => productSelectors.selectById(state, id!));
 const {status: productStatus} = useAppSelector(state => state.catalog);
 const [quantity, setQuantity] = useState(0);
 const item = basket?.items.find(i => i.productId === product?.id);

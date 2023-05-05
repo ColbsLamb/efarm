@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Header from "./Header";
 import 'react-toastify/dist/ReactToastify.css';
-import LoadingComponent from "./LoadingComponents";
+import LoadingComponent from "./LoadingComponent";
 import { useAppDispatch } from "../store/configureStore";
 import { fetchBasketAsync } from "../../features/basket/basketSlice";
 import { fetchCurrentUser } from "../../features/account/accountSlice";
